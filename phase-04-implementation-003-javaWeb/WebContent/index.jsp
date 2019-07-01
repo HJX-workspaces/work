@@ -5,7 +5,7 @@
 <head>
 <style>
 .background1 {
-	background-image: url(/static/imgs/pic008.jpg);
+	background-image: ${pageContext.request.contextPath}/static/imgs/pic008.jpg;
 	background-color: #000000;
 }
 </style>
@@ -52,11 +52,11 @@
 </script>
 <meta charset="UTF-8">
 <title>The Wandering Earth</title>
-<script src="/static/jquery.min.js"></script>
+<script src="${pageContext.request.contextPath}/static/jquery.min.js"></script>
 </head>
 <body class="background1">
 	<audio id="intr" controls="controls"
-		src="/static/audio/introduction.mp3" autoplay="autoplay"></audio>
+		src="${pageContext.request.contextPath}/static/audio/introduction.mp3" autoplay="autoplay"></audio>
 	<audio id="poem" src="/static/audio/wanderingEarch-poem.mp3"
 		preload="auto"></audio>
     <span id="firstline" style="font-size: 22px; color: white">大家好，我与这学期学习“软件工程导论”的学生们准备设计和实现一个“<span
